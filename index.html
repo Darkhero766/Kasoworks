@@ -9,16 +9,106 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">KasoWorks</div>
+  <header class="navbar"> <div class="logo">KasoWorks</div>
     <nav class="nav-links" id="navLinks">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
+      <a href="index.html">Home</a>
+      <a href="#products">Products</a>
+
+      
+      <a href="contact.html">Contact</a>
     </nav>
-    <button class="menu-toggle" onclick="toggleMenu()"></button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button> </header>
+
+  <section class="hero-carousel">
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+         <img src="https://via.placeholder.com/1500x500/A0A0A0/FFFFFF?text=Crafted+with+Care" alt="Slide 1: Crafted with Care">
+         <div class="carousel-caption">
+           
+            <h1>Crafted with Care</h1>
+           <p>Best homemades for your home</p>
+           <a href="#" class="btn">Shop Now</a>
+         </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1500x500/B0B0B0/FFFFFF?text=Minimalist+Design" alt="Slide 2: Minimalist Design">
+        <div class="carousel-caption">
+           <h1>Minimalist Design</h1>
+          
+           <p>Simplicity and elegance in every section</p>
+           <a href="#" class="btn">View Collection</a>
+        </div>
+      </div>
     
-  </header>
+      <div class="carousel-item">
+          <img src="https://via.placeholder.com/1500x500/C0C0C0/FFFFFF?text=Sustainable+Materials" alt="Slide 3: Sustainable Materials">
+          <div class="carousel-caption">
+            <h1>Sustainable Materials</h1>
+            <p>Handicrafts made with respect for nature.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        
+      </div>
+    </div>
+    
+    <div class="carousel-indicators">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      
+    </div>
+  </section>
+
+  <div class="content"> <h1>
+      Welcome to kasoworks
+    </h1>
+    <p>
+      This is a simple store for minimalist handicraft products
+    </p>
+  </div>
+
+  <section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <p>Explore our collection of handcrafted minimalist products designed with care and sustainability in mind.</p>
+    <div class="products-grid">
+      <div class="product-card">
+        
+        <img src="https://via.placeholder.com/300x300/8a4f26/FFFFFF?text=Wooden+Bowl" alt="Handcrafted Wooden Bowl">
+        <h3>Wooden Bowl</h3>
+        <p>Beautifully crafted wooden bowl perfect for serving.</p>
+        <span class="price">₹1,299</span>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300/8a4f26/FFFFFF?text=Ceramic+Vase" alt="Minimalist Ceramic Vase">
+        <h3>Ceramic Vase</h3>
+        <p>Elegant minimalist vase for your home decor.</p>
+        <span class="price">₹899</span>
+        
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300/8a4f26/FFFFFF?text=Bamboo+Tray" alt="Sustainable Bamboo Tray">
+        <h3>Bamboo Tray</h3>
+        <p>Eco-friendly bamboo serving tray.</p>
+        <span class="price">₹649</span>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"> <h2>Stay Connected</h2>
+    <div class="social-icons">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📸</a>
+      
+    </div>
+    <p>
+      @copy: All right reserved Kaso works 2025
+    </p>
+  </footer>
   <script src="script.js"></script>
 </body>
 
-</html>
+           </html>
